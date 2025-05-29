@@ -1,5 +1,6 @@
 package com.example.mylibrary
 
+import android.content.Context
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun helloToTheWorld() {
-        Toast.makeText(this, "Hello to the world", Toast.LENGTH_SHORT).show()
+    fun helloToTheWorld(context: Context) {
+        Toast.makeText(context, "Hello to the world", Toast.LENGTH_SHORT).show()
     }
 }
